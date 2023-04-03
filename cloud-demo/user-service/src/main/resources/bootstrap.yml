@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: userservice # 服务名称
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # Nacos地址
+      config:
+        server-addr: localhost:8848 # Nacos地址
+        file-extension: yml
+
+#  cloud:
+#    nacos:
+#      server-addr: localhost:8848 # Nacos地址
+#      config:
+#        file-extension: yaml # 文件后缀名
